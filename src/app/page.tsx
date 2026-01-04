@@ -8,7 +8,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-[#0b0b0f] text-slate-100">
-      <div className="mx-auto px-6 pb-16 pt-10 md:pt-14">
+      <div className="mx-auto max-w-6xl px-6 pb-16 pt-10 md:pt-14">
         <header className="flex flex-col gap-4 border-b border-white/5 pb-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center justify-between">
             <div
