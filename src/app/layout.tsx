@@ -1,21 +1,15 @@
 import type { Metadata } from 'next';
-import { Manrope, Space_Grotesk, Playfair_Display } from 'next/font/google';
+import { Geist } from 'next/font/google';
 import './globals.css';
 
-const display = Space_Grotesk({
-  variable: '--font-display',
+const geist = Geist({
+  variable: '--font-geist',
   subsets: ['latin'],
 });
 
-const body = Manrope({
-  variable: '--font-body',
-  subsets: ['latin'],
-});
-
-const logo = Playfair_Display({
-  variable: '--font-logo',
-  subsets: ['latin'],
-});
+const display = geist;
+const body = geist;
+const logo = geist;
 
 export const metadata: Metadata = {
   title: 'Aiery Studio',
@@ -30,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${display.variable} ${body.variable} ${logo.variable} antialiased`}
+        className={`${geist.variable} antialiased font-[family-name:var(--font-geist)]`}
       >
         {children}
       </body>
