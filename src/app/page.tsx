@@ -11,7 +11,7 @@ export default function Home() {
       <div className="mx-auto px-6 pb-16 pt-10 md:pt-14">
         <header className="flex flex-col gap-4 border-b border-white/5 pb-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center justify-between">
-            <div className="text-6xl font-semibold tracking-[0.32em] text-white md:text-8xl">
+            <div className="text-3xl font-semibold tracking-[0.32em] text-white md:text-8xl">
               AEI<span className="text-[#d6422b]">R</span>Y
             </div>
             <button
@@ -96,14 +96,14 @@ export default function Home() {
           <section className="grid gap-8 p-8 md:grid-cols-[1.05fr_0.95fr] md:items-center">
             <div className="space-y-5">
               <div className="flex items-baseline gap-3">
-                <span className="text-7xl font-extrabold uppercase text-white md:text-8xl">
+                <span className="text-4xl font-extrabold uppercase text-white md:text-8xl">
                   Product
                 </span>
-                <span className="text-7xl font-light uppercase text-slate-300 md:text-8xl">
+                <span className="text-4xl font-light uppercase text-slate-300 md:text-8xl">
                   Design
                 </span>
               </div>
-              <p className="max-w-xl text-2xl leading-relaxed text-slate-300">
+              <p className="max-w-xl text-base md:text-2xl leading-relaxed text-slate-300">
                 Bring your product ideas to life with stunning 3D design. We
                 craft realistic, detailed models that showcase your product from
                 every angle, perfect for marketing, prototyping, or
@@ -112,7 +112,7 @@ export default function Home() {
                 <span className="text-[#d6422b]">Not sure where to start?</span>{' '}
                 Just book an appointment right away.
               </p>
-              <button className="inline-flex w-fit items-center justify-center rounded-full bg-[#ff5a1f] px-5 py-3 text-2xl font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_25px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(255,90,31,0.45)]">
+              <button className="inline-flex w-fit items-center justify-center rounded-full bg-[#ff5a1f] px-5 py-3 text-base md:text-2xl font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_25px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(255,90,31,0.45)]">
                 Book Now
               </button>
             </div>
@@ -124,10 +124,10 @@ export default function Home() {
 
           <section className="grid gap-8 p-8 md:grid-cols-[1.05fr_0.95fr] md:items-center">
             <div className="space-y-5">
-              <h2 className="text-7xl font-extrabold uppercase text-white md:text-8xl">
+              <h2 className="text-4xl font-extrabold uppercase text-white md:text-8xl">
                 Product Showcase
               </h2>
-              <p className="max-w-xl text-2xl leading-relaxed text-slate-300">
+              <p className="max-w-xl text-base md:text-2xl leading-relaxed text-slate-300">
                 Experience your product like never before. Our 3D representation
                 highlight every detail with precision and style perfect for
                 presentations, ads, and online stores that demand a stunning
@@ -142,19 +142,19 @@ export default function Home() {
 
           <section className="flex flex-col items-center gap-8 p-8 md:p-12">
             <div className="space-y-6 text-center">
-              <p className="text-2xl text-slate-400">
+              <p className="text-base md:text-2xl text-slate-400">
                 Want to showcase your product in a more{' '}
                 <span className="font-semibold text-white">immersive</span> way?
               </p>
               <div className="flex items-center justify-center gap-4">
-                <button className="inline-flex items-center justify-center rounded-lg bg-[#ff5a1f] px-6 py-3 text-2xl font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_25px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(255,90,31,0.45)]">
+                <button className="inline-flex items-center justify-center rounded-lg bg-[#ff5a1f] px-6 py-3 text-base md:text-2xl font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_25px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(255,90,31,0.45)]">
                   3D
                 </button>
-                <button className="inline-flex items-center justify-center rounded-lg bg-slate-600 px-6 py-3 text-2xl font-semibold uppercase tracking-[0.14em] text-white transition hover:-translate-y-0.5 hover:bg-slate-500">
+                <button className="inline-flex items-center justify-center rounded-lg bg-slate-600 px-6 py-3 text-base md:text-2xl font-semibold uppercase tracking-[0.14em] text-white transition hover:-translate-y-0.5 hover:bg-slate-500">
                   AR
                 </button>
               </div>
-              <p className="max-w-2xl text-2xl leading-relaxed text-slate-300">
+              <p className="max-w-2xl text-base md:text-2xl leading-relaxed text-slate-300">
                 3D product showcasing brings your product to life with
                 interactive, realistic visuals that engage users and boost brand
                 appeal instantly.
@@ -167,11 +167,11 @@ export default function Home() {
           </section>
 
           <section className="flex flex-col items-center gap-8 p-8 md:p-12">
-            <h2 className="text-8xl font-extrabold uppercase text-white text-center tracking-[0.2em]">
+            <h2 className="text-4xl md:text-8xl font-extrabold uppercase text-white text-center tracking-[0.1em] md:tracking-[0.2em]">
               A<span className="text-[#ff5a1f]">N</span>IMATIO
               <span className="text-[#ff5a1f]">N</span>
             </h2>
-            <p className="max-w-2xl text-center text-2xl leading-relaxed text-slate-300">
+            <p className="max-w-2xl text-center text-base md:text-2xl leading-relaxed text-slate-300">
               3D product animation brings your product to life with dynamic,
               high-quality visuals. It highlights features, demonstrates
               functionality, and tells your product's story in a way that's
@@ -185,18 +185,20 @@ export default function Home() {
           <section className="p-8 md:p-12">
             <div className="space-y-8">
               {/* First Row: Vertical and Square Formats */}
-              <div className="grid gap-8 md:grid-cols-2">
+              <div className="grid gap-16 md:grid-cols-2">
                 {/* Vertical Format */}
-                <div className="flex flex-col gap-4">
-                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-xs">
+                <div className="flex flex-col md:flex-row gap-4 items-start">
+                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-md flex-shrink-0">
                     <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
                   </div>
-                  <div>
-                    <h3 className="text-4xl font-bold uppercase text-white">
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-4xl font-bold uppercase text-white">
                       Vertical Format
                     </h3>
-                    <p className="text-6xl font-bold text-[#ff5a1f]">9:16</p>
-                    <p className="mt-3 text-2xl text-slate-300">
+                    <p className="text-4xl md:text-6xl font-bold text-[#ff5a1f]">
+                      9:16
+                    </p>
+                    <p className="mt-3 text-base md:text-2xl text-slate-300">
                       Experience your product like never before. Our 3D
                       representation highlight every detail with precision and
                       style perfect for presentations, ads, and online stores
@@ -207,14 +209,17 @@ export default function Home() {
 
                 {/* Square Format */}
                 <div className="flex flex-col gap-4">
-                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-xs">
-                    <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-xl relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,90,31,0.15),transparent_60%)]" />
+                    <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.12),rgba(0,0,0,0.85))]">
+                      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,90,31,0.1)_0%,transparent_50%)]" />
+                    </div>
                   </div>
                   <div>
-                    <h3 className="text-4xl font-bold uppercase text-white">
+                    <h3 className="text-2xl md:text-4xl font-bold uppercase text-white">
                       Square Format
                     </h3>
-                    <p className="text-6xl font-bold text-white">
+                    <p className="text-4xl md:text-6xl font-bold text-white">
                       <span className="text-[#ff5a1f]">1:</span>1
                     </p>
                   </div>
@@ -222,16 +227,18 @@ export default function Home() {
               </div>
 
               {/* Second Row: Landscape Format Full Width */}
-              <div className="flex flex-col gap-4">
-                <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-2xl">
+              <div className="flex flex-col md:flex-row-reverse gap-4 items-start">
+                <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-4xl flex-shrink-0">
                   <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
                 </div>
-                <div>
-                  <h3 className="text-4xl font-bold uppercase text-white">
+                <div className="flex-1">
+                  <h3 className="text-2xl md:text-4xl font-bold uppercase text-white">
                     Landscape Format
                   </h3>
-                  <p className="text-6xl font-bold text-[#ff5a1f]">16:9</p>
-                  <p className="mt-3 text-2xl text-slate-300">
+                  <p className="text-4xl md:text-6xl font-bold text-[#ff5a1f]">
+                    16:9
+                  </p>
+                  <p className="mt-3 text-base md:text-2xl text-slate-300">
                     Experience your product like never before. Our 3D
                     representation highlight every detail with precision and
                     style perfect for presentations, ads, and online stores that
@@ -244,10 +251,10 @@ export default function Home() {
 
           <section className="flex flex-col items-center gap-8 p-8 md:p-12">
             <div className="text-center space-y-4">
-              <h2 className="text-8xl font-extrabold uppercase text-white">
+              <h2 className="text-4xl md:text-8xl font-extrabold uppercase text-white">
                 Product <span className="font-light">Walkthrough</span>
               </h2>
-              <p className="max-w-2xl text-2xl leading-relaxed text-slate-300 text-center mx-auto">
+              <p className="max-w-2xl text-base md:text-2xl leading-relaxed text-slate-300 text-center mx-auto">
                 A 3D product walkthrough offers a detailed, interactive journey
                 through your product's design and features, helping users
                 explore functionality, understand usage, and experience its
@@ -260,10 +267,10 @@ export default function Home() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
               </div>
               <div className="space-y-5">
-                <h3 className="text-7xl font-extrabold uppercase text-white">
+                <h3 className="text-4xl md:text-7xl font-extrabold uppercase text-white">
                   Explosive <span className="text-[#ff5a1f]">View</span>
                 </h3>
-                <p className="max-w-xl text-2xl leading-relaxed text-slate-300">
+                <p className="max-w-xl text-base md:text-2xl leading-relaxed text-slate-300">
                   An exploded view visually separates components to reveal inner
                   parts and assembly. It helps users understand structure,
                   functionality, and design with clarity that static images
@@ -278,10 +285,10 @@ export default function Home() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
             </div>
             <div className="space-y-5">
-              <h2 className="text-7xl font-extrabold uppercase text-white">
+              <h2 className="text-4xl md:text-7xl font-extrabold uppercase text-white">
                 Industrial <span className="font-light">Explainer</span>
               </h2>
-              <p className="max-w-xl text-2xl leading-relaxed text-slate-300">
+              <p className="max-w-xl text-base md:text-2xl leading-relaxed text-slate-300">
                 Industrial explainers showcase how products are assembled and
                 disassembled through detailed 3D animations, making complex
                 processes easy to understand for training, troubleshooting, or
@@ -292,10 +299,10 @@ export default function Home() {
 
           <section className="grid gap-8 p-8 md:grid-cols-[1.05fr_0.95fr] md:items-center">
             <div className="space-y-5">
-              <h2 className="text-7xl font-extrabold uppercase text-white">
+              <h2 className="text-4xl md:text-7xl font-extrabold uppercase text-white">
                 How-To <span className="font-light">Explainer</span>
               </h2>
-              <p className="max-w-xl text-2xl leading-relaxed text-slate-300">
+              <p className="max-w-xl text-base md:text-2xl leading-relaxed text-slate-300">
                 Our step-by-step guide makes using your product effortless. From
                 unboxing to full operation, each stage is clearly explained with
                 visuals, ensuring users get started quickly and confidently
@@ -309,7 +316,7 @@ export default function Home() {
           </section>
         </main>
 
-        <footer className="mt-16 border-t border-white/5 pt-10 text-center text-2xl text-slate-400">
+        <footer className="mt-16 border-t border-white/5 pt-10 text-center text-base md:text-2xl text-slate-400">
           <p>© 2025 Aiery - Where ideas transform</p>
         </footer>
       </div>
