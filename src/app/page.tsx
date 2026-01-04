@@ -93,7 +93,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 p-8 md:grid-cols-[1.05fr_0.95fr] md:items-center">
+          <section className="grid gap-8 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:p-8">
             <div className="space-y-5">
               <div className="flex items-baseline gap-3">
                 <span className="text-4xl font-extrabold uppercase text-white md:text-8xl">
@@ -122,7 +122,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 p-8 md:grid-cols-[1.05fr_0.95fr] md:items-center">
+          <section className="grid gap-8 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:p-8">
             <div className="space-y-5">
               <h2 className="text-4xl font-extrabold uppercase text-white md:text-8xl">
                 Product Showcase
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col items-center gap-8 p-8 md:p-12">
+          <section className="flex flex-col items-center gap-8 py-8 md:p-12">
             <div className="space-y-6 text-center">
               <p className="text-base md:text-2xl text-slate-400">
                 Want to showcase your product in a more{' '}
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col items-center gap-8 p-8 md:p-12">
+          <section className="flex flex-col items-center gap-8 py-8 md:p-12">
             <h2 className="text-4xl md:text-8xl font-extrabold uppercase text-white text-center tracking-[0.1em] md:tracking-[0.2em]">
               A<span className="text-[#ff5a1f]">N</span>IMATIO
               <span className="text-[#ff5a1f]">N</span>
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="p-8 md:p-12">
+          <section className="py-8 md:p-12">
             <div className="space-y-8">
               {/* First Row: Vertical and Square Formats */}
               <div className="grid gap-16 md:grid-cols-2">
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col items-center gap-8 p-8 md:p-12">
+          <section className="flex flex-col items-center gap-8 py-8 md:p-12">
             <div className="text-center space-y-4">
               <h2 className="text-4xl md:text-8xl font-extrabold uppercase text-white">
                 Product <span className="font-light">Walkthrough</span>
@@ -280,7 +280,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 p-8 md:grid-cols-2 md:items-center">
+          <section className="grid gap-8 py-8 md:grid-cols-2 md:items-center md:p-8">
             <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
             </div>
@@ -297,7 +297,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 p-8 md:grid-cols-[1.05fr_0.95fr] md:items-center">
+          <section className="grid gap-8 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:p-8">
             <div className="space-y-5">
               <h2 className="text-4xl md:text-7xl font-extrabold uppercase text-white">
                 How-To <span className="font-light">Explainer</span>
