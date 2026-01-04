@@ -8,7 +8,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-[#0b0b0f] text-slate-100">
-      <div className="mx-auto max-w-6xl px-6 pb-16 pt-10 md:pt-14">
+      <div className="mx-auto px-6 pb-16 pt-10 md:pt-14">
         <header className="flex flex-col gap-4 border-b border-white/5 pb-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center justify-between">
             <div
@@ -79,7 +79,7 @@ export default function Home() {
           <section className="rounded-[30px] border border-white/8 bg-[#0e0e12] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
             <div className="relative overflow-hidden rounded-[22px] bg-black">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.12),transparent_45%)]" />
-              <div className="relative aspect-[16/9] flex items-center justify-center">
+              <div className="relative aspect-[21/9] flex items-center justify-center">
                 <div className="h-[68%] w-[68%] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0%,rgba(0,0,0,0.1)_48%,rgba(0,0,0,0.85)_100%)] blur-[28px]" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="flex flex-col items-center gap-3 text-center">
@@ -165,7 +165,7 @@ export default function Home() {
             </div>
 
             <div className="w-full rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-              <div className="relative aspect-video overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+              <div className="relative aspect-[2/1] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
             </div>
           </section>
 
@@ -180,7 +180,7 @@ export default function Home() {
               engaging, clear, and impactful.
             </p>
             <div className="w-full rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-              <div className="relative aspect-video overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+              <div className="relative aspect-[2/1] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
             </div>
           </section>
 
@@ -225,7 +225,7 @@ export default function Home() {
               {/* Landscape Format - Bottom Right */}
               <div className="flex flex-col gap-4">
                 <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-                  <div className="relative aspect-video overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                  <div className="relative aspect-[2/1] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
                 </div>
                 <div>
                   <h3 className="font-display text-xl font-bold uppercase text-white">
