@@ -188,8 +188,8 @@ export default function Home() {
               <div className="grid gap-8 md:grid-cols-2">
                 {/* Vertical Format */}
                 <div className="flex flex-col gap-4">
-                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-[9/16] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-xs">
+                    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
                   </div>
                   <div>
                     <h3 className="text-4xl font-bold uppercase text-white">
@@ -207,8 +207,8 @@ export default function Home() {
 
                 {/* Square Format */}
                 <div className="flex flex-col gap-4">
-                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-                    <div className="relative aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                  <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-xs">
+                    <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
                   </div>
                   <div>
                     <h3 className="text-4xl font-bold uppercase text-white">
@@ -223,8 +223,8 @@ export default function Home() {
 
               {/* Second Row: Landscape Format Full Width */}
               <div className="flex flex-col gap-4">
-                <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-                  <div className="relative aspect-[16/9] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-2xl">
+                  <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
                 </div>
                 <div>
                   <h3 className="text-4xl font-bold uppercase text-white">
@@ -247,7 +247,7 @@ export default function Home() {
               <h2 className="text-8xl font-extrabold uppercase text-white">
                 Product <span className="font-light">Walkthrough</span>
               </h2>
-              <p className="max-w-2xl text-2xl leading-relaxed text-slate-300">
+              <p className="max-w-2xl text-2xl leading-relaxed text-slate-300 text-center mx-auto">
                 A 3D product walkthrough offers a detailed, interactive journey
                 through your product's design and features, helping users
                 explore functionality, understand usage, and experience its
@@ -310,7 +310,7 @@ export default function Home() {
         </main>
 
         <footer className="mt-16 border-t border-white/5 pt-10 text-center text-2xl text-slate-400">
-          <p>© 2025 Aery - Where ideas transform</p>
+          <p>© 2025 Aiery - Where ideas transform</p>
         </footer>
       </div>
     </div>
