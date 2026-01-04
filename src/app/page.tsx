@@ -75,21 +75,16 @@ export default function Home() {
         <main className="mt-10 space-y-10 md:mt-14">
           <section className="p-5">
             <div className="relative overflow-hidden rounded-[22px] bg-black">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.12),transparent_45%)]" />
-              <div className="relative aspect-[21/9] flex items-center justify-center">
-                <div className="h-[68%] w-[68%] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0%,rgba(0,0,0,0.1)_48%,rgba(0,0,0,0.85)_100%)] blur-[28px]" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex flex-col items-center gap-3 text-center">
-                    <span className="text-xl font-semibold uppercase tracking-[0.28em] text-slate-300">
-                      Hero Video Placeholder
-                    </span>
-                    <span className="rounded-full border border-white/15 px-4 py-2 text-lg uppercase tracking-[0.28em] text-slate-200">
-                      Drop your clip here
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute inset-3 rounded-[18px] border border-white/5" />
+              <video
+                className="w-full aspect-[21/9] object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/videos/hero.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-3 rounded-[18px] border border-white/5 pointer-events-none" />
             </div>
           </section>
 
