@@ -177,7 +177,15 @@ export default function Home() {
                 {/* Vertical Format */}
                 <div className="flex flex-col md:flex-row gap-4 items-start">
                   <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-md flex-shrink-0">
-                    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                    <video
+                      className="w-full h-auto object-cover rounded-[22px]"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    >
+                      <source src="/videos/vertical.mp4" type="video/mp4" />
+                    </video>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl md:text-4xl font-bold uppercase text-white">
@@ -199,9 +207,15 @@ export default function Home() {
                 <div className="flex flex-col gap-4">
                   <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-xl relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,90,31,0.15),transparent_60%)]" />
-                    <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.12),rgba(0,0,0,0.85))]">
-                      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,90,31,0.1)_0%,transparent_50%)]" />
-                    </div>
+                    <video
+                      className="w-full h-auto object-cover rounded-[22px]"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    >
+                      <source src="/videos/square.mp4" type="video/mp4" />
+                    </video>
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-4xl font-bold uppercase text-white">
@@ -217,7 +231,15 @@ export default function Home() {
               {/* Second Row: Landscape Format Full Width */}
               <div className="flex flex-col md:flex-row-reverse gap-4 items-start">
                 <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)] w-full max-w-4xl flex-shrink-0">
-                  <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+                  <video
+                    className="w-full h-auto object-cover rounded-[22px]"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/videos/horizontal.mp4" type="video/mp4" />
+                  </video>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl md:text-4xl font-bold uppercase text-white">
