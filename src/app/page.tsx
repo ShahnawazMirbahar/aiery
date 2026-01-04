@@ -73,8 +73,8 @@ export default function Home() {
         </header>
 
         <main className="mt-10 space-y-10 md:mt-14">
-          <section>
-            <div className="relative overflow-hidden bg-black w-full">
+          <section className="px-4 md:px-8">
+            <div className="relative overflow-hidden rounded-[22px] bg-black">
               <video className="w-full h-auto" autoPlay loop muted playsInline>
                 <source src="/videos/hero.mp4" type="video/mp4" />
               </video>
