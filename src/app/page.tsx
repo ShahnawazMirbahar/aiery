@@ -202,8 +202,16 @@ export default function Home() {
               functionality, and tells your product's story in a way that's
               engaging, clear, and impactful.
             </p>
-            <div className="w-full rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-              <div className="relative aspect-[2/1] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+            <div className="w-full rounded-[24px] overflow-hidden bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+              <video
+                className="w-full h-auto object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/videos/animation.mp4" type="video/mp4" />
+              </video>
             </div>
           </section>
 
