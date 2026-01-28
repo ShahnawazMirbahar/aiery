@@ -120,14 +120,12 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="rounded-[28px] border border-white/10 bg-gradient-to-br from-[#1a1a1f] to-[#0f0f13] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] hover:border-white/20 transition">
-              <div className="rounded-[24px] overflow-hidden bg-black">
-                <ImageSlider
-                  images={productImages}
-                  title=""
-                  productName="Premium Product"
-                />
-              </div>
+            <div className="rounded-[28px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+              <ImageSlider
+                images={productImages}
+                title=""
+                productName="Premium Product"
+              />
             </div>
           </section>
 

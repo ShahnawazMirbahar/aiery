@@ -15,54 +15,71 @@ export default function ImageSlider({
   productName = 'Product',
 }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [direction, setDirection] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setIsTransitioning(false);
-      }, 500);
+      setDirection(1);
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   const goToPrevious = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-      setIsTransitioning(false);
-    }, 500);
+    setDirection(-1);
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   const goToNext = () => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-      setIsTransitioning(false);
-    }, 500);
+    setDirection(1);
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const handleImageClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const halfWidth = rect.width / 2;
+
+    if (x < halfWidth) {
+      goToPrevious();
+    } else {
+      goToNext();
+    }
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full group">
       {/* Main Image Display */}
-      <div className="relative bg-black rounded-[24px] overflow-hidden aspect-square">
-        <Image
-          src={images[currentIndex]}
-          alt={`${productName} - Image ${currentIndex + 1}`}
-          fill
-          className={`object-cover w-full h-full transition-opacity duration-500 ${
-            isTransitioning ? 'opacity-0' : 'opacity-100'
-          }`}
-          priority
-        />
+      <div className="relative bg-black rounded-[24px] overflow-hidden aspect-square cursor-pointer">
+        <div
+          className="relative w-full h-full flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          onClick={handleImageClick}
+        >
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="min-w-full h-full relative flex-shrink-0"
+            >
+              <Image
+                src={image}
+                alt={`${productName} - Image ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            </div>
+          ))}
+        </div>
 
-        {/* Navigation Buttons */}
+        {/* Navigation Buttons - Show on hover */}
         <button
-          onClick={goToPrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition duration-300 backdrop-blur"
+          onClick={(e) => {
+            e.stopPropagation();
+            goToPrevious();
+          }}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition-all duration-300 backdrop-blur opacity-0 group-hover:opacity-100"
           aria-label="Previous image"
         >
           <svg
@@ -81,8 +98,11 @@ export default function ImageSlider({
         </button>
 
         <button
-          onClick={goToNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition duration-300 backdrop-blur"
+          onClick={(e) => {
+            e.stopPropagation();
+            goToNext();
+          }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition-all duration-300 backdrop-blur opacity-0 group-hover:opacity-100"
           aria-label="Next image"
         >
           <svg
