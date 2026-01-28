@@ -15,21 +15,34 @@ export default function ImageSlider({
   productName = 'Product',
 }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 1000);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+        setIsTransitioning(false);
+      }, 500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+      setIsTransitioning(false);
+    }, 500);
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+      setIsTransitioning(false);
+    }, 500);
   };
 
   return (
@@ -40,7 +53,9 @@ export default function ImageSlider({
           src={images[currentIndex]}
           alt={`${productName} - Image ${currentIndex + 1}`}
           fill
-          className="object-cover w-full h-full"
+          className={`object-cover w-full h-full transition-opacity duration-500 ${
+            isTransitioning ? 'opacity-0' : 'opacity-100'
+          }`}
           priority
         />
 
