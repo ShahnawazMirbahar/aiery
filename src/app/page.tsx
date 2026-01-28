@@ -318,8 +318,16 @@ export default function Home() {
             </div>
 
             <div className="grid gap-8 w-full md:grid-cols-2 md:items-center">
-              <div className="rounded-[24px] border border-[#4a9eff] bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+              <div className="rounded-[24px] overflow-hidden bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+                <video
+                  className="w-full h-auto object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src="/videos/explosive.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="space-y-5">
                 <h3 className="text-4xl md:text-7xl font-extrabold uppercase text-white">
@@ -336,8 +344,16 @@ export default function Home() {
           </section>
 
           <section className="grid gap-8 py-8 md:grid-cols-2 md:items-center md:p-8">
-            <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+            <div className="rounded-[24px] overflow-hidden bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+              <video
+                className="w-full h-auto object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/videos/industrial.mp4" type="video/mp4" />
+              </video>
             </div>
             <div className="space-y-5">
               <h2 className="text-4xl md:text-7xl font-extrabold uppercase text-white">
