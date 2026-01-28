@@ -110,25 +110,25 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:p-8">
+          <section className="grid gap-8 py-8 grid-cols-[1fr_1.5fr] items-center p-8 max-w-7xl mx-auto">
             <div className="space-y-5">
               <div className="flex items-baseline gap-3">
                 <span
-                  style={{ fontSize: 'clamp(2rem, 8vw, 7rem)' }}
-                  className="font-extrabold uppercase text-white"
+                  style={{ fontSize: 'clamp(1.25rem, 5vw, 6rem)' }}
+                  className="font-extrabold uppercase text-white leading-none"
                 >
                   Product
                 </span>
                 <span
-                  style={{ fontSize: 'clamp(2rem, 8vw, 7rem)' }}
-                  className="font-light uppercase text-slate-300"
+                  style={{ fontSize: 'clamp(1.25rem, 5vw, 6rem)' }}
+                  className="font-light uppercase text-slate-300 leading-none"
                 >
                   Design
                 </span>
               </div>
               <p
-                style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}
-                className="max-w-xl leading-relaxed text-slate-300"
+                style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1rem)' }}
+                className="leading-relaxed text-slate-300"
               >
                 Bring your product ideas to life with stunning 3D design. We
                 craft realistic, detailed models that showcase your product from
@@ -140,7 +140,7 @@ export default function Home() {
               </p>
               <button
                 className="inline-flex w-fit items-center justify-center rounded-full bg-[#ff5a1f] px-5 py-3 font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_25px_rgba(255,90,31,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(255,90,31,0.45)]"
-                style={{ fontSize: 'clamp(0.875rem, 1.5vw, 1.1rem)' }}
+                style={{ fontSize: 'clamp(0.75rem, 1vw, 0.95rem)' }}
               >
                 Book Now
               </button>
@@ -155,17 +155,17 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="grid gap-8 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:p-8">
+          <section className="grid gap-8 py-8 grid-cols-[1fr_1.5fr] items-center p-8 max-w-7xl mx-auto">
             <div className="space-y-5">
               <h2
-                style={{ fontSize: 'clamp(2rem, 8vw, 7rem)' }}
-                className="font-extrabold uppercase text-white"
+                style={{ fontSize: 'clamp(1.25rem, 5vw, 6rem)' }}
+                className="font-extrabold uppercase text-white leading-none"
               >
                 Product Showcase
               </h2>
               <p
-                style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}
-                className="max-w-xl leading-relaxed text-slate-300"
+                style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1rem)' }}
+                className="leading-relaxed text-slate-300"
               >
                 Experience your product like never before. Our 3D representation
                 highlight every detail with precision and style perfect for
