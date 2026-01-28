@@ -1,11 +1,26 @@
 'use client';
 
 import { useState } from 'react';
+import ImageSlider from '@/components/ImageSlider';
 
 const navItems = ['Home', 'Portfolio', 'About', 'Contact Us'];
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Product images 1-9
+  const productImages = [
+    '/images/1.jpeg',
+    '/images/2.jpeg',
+    '/images/3.png',
+    '/images/4.png',
+    '/images/5.png',
+    '/images/6.png',
+    '/images/7.png',
+    '/images/8.png',
+    '/images/9.png',
+  ];
+
   return (
     <div className="min-h-screen bg-[#0b0b0f] text-slate-100">
       <div className="mx-auto px-6 pb-16 pt-10 md:pt-14">
@@ -105,8 +120,14 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-              <div className="relative aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+            <div className="rounded-[28px] border border-white/10 bg-gradient-to-br from-[#1a1a1f] to-[#0f0f13] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.55)] hover:border-white/20 transition">
+              <div className="rounded-[24px] overflow-hidden bg-black">
+                <ImageSlider
+                  images={productImages}
+                  title=""
+                  productName="Premium Product"
+                />
+              </div>
             </div>
           </section>
 
