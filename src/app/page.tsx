@@ -41,7 +41,7 @@ export default function Home() {
         <header className="flex flex-col gap-4 border-b border-white/5 pb-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center justify-between">
             <div className="text-3xl font-semibold tracking-[0.32em] text-white md:text-8xl">
-              AEI<span className="text-[#d6422b]">R</span>Y
+              AEI<span className="text-[#d6422b]">R</span>Yy
             </div>
             <button
               type="button"
