@@ -21,6 +21,20 @@ export default function Home() {
     '/images/9.png',
   ];
 
+  // Product Showcase images p1-p10
+  const showcaseImages = [
+    '/images/p1.png',
+    '/images/p2.png',
+    '/images/p3.png',
+    '/images/p4.png',
+    '/images/p5.png',
+    '/images/p6.png',
+    '/images/p7.png',
+    '/images/p8.png',
+    '/images/p9.png',
+    '/images/p10.png',
+  ];
+
   return (
     <div className="min-h-screen bg-[#0b0b0f] text-slate-100">
       <div className="mx-auto px-6 pb-16 pt-10 md:pt-14">
@@ -142,8 +156,12 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-[24px] border border-white/8 bg-[#111113] shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
-              <div className="relative aspect-square overflow-hidden rounded-[22px] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),rgba(0,0,0,0.85))]" />
+            <div className="rounded-[28px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+              <ImageSlider
+                images={showcaseImages}
+                title=""
+                productName="Showcase Product"
+              />
             </div>
           </section>
 
